@@ -21,6 +21,24 @@ npm install
 claude mcp add rapidminer -s user -- node "$PWD/src/index.js"
 ```
 
+### Using with OpenCode
+
+Add the server to `~/.config/opencode/opencode.jsonc` (or an `opencode.json` in your project), using the absolute path to `src/index.js`:
+
+```jsonc
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "rapidminer": {
+      "type": "local",
+      "command": ["node", "/absolute/path/to/AIStudioMCP/src/index.js"],
+      "enabled": true
+      // "environment": { "RAPIDMINER_HOME": "/path/to/AI Studio" }
+    }
+  }
+}
+```
+
 AI Studio is expected at `~/Downloads/Altair/RapidMiner/AI Studio 2026.1.1`. If yours is elsewhere, set `RAPIDMINER_HOME`
 (for both `agent/build.sh` and the MCP server's environment).
 

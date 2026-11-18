@@ -3,7 +3,7 @@
     "rapidminer": {
       "type": "stdio",
       "command": "node",
-      "args": [],
+      "args": ["src/index.js"],
       "env": {}
     }
   }
