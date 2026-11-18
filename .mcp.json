@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "rapidminer": {
+      "type": "stdio",
+      "command": "node",
+      "args": [],
+      "env": {}
+    }
+  }
+}

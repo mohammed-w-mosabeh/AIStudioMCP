@@ -1,0 +1,23 @@
+{
+  "name": "aistudio-mcp",
+  "version": "0.1.0",
+  "description": "MCP server to control Altair AI Studio (RapidMiner) via an in-process Java agent",
+  "main": "src/index.js",
+  "scripts": {
+    "login": "node scripts/login.js",
+    "start": "node src/index.js",
+    "build-agent": "agent/build.sh",
+    "launch": "scripts/launch-ai-studio.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bin": {
+    "aistudio-mcp": "src/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  }
+}
